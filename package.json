@@ -21,11 +21,11 @@
         "lib"
     ],
     "scripts": {
-        "build": "next build",
+        "build": "cd frontend && npm run build",
         "build:rsshub": "tsx scripts/workflow/build-routes.ts && tsdown",
         "build:vercel": "tsx scripts/workflow/build-routes.ts && tsdown --config ./tsdown-vercel.config.ts && mv dist/server.mjs dist/index.mjs && tsx scripts/workflow/build-vercel-packagejson.ts",
         "build:docs": "tsx scripts/workflow/build-docs.ts",
-        "dev": "next dev",
+        "dev": "cd frontend && npm run dev",
         "dev:rsshub": "cross-env NODE_ENV=dev NODE_OPTIONS='--max-http-header-size=32768' tsx watch --inspect --clear-screen=false lib/index.ts",
         "dev:cache": "cross-env NODE_ENV=production NODE_OPTIONS='--max-http-header-size=32768' tsx watch --clear-screen=false lib/index.ts",
         "format": "prettier \"**/*.{ts,tsx,js,json}\" --write --experimental-cli && eslint --cache --fix \"**/*.{ts,tsx,js,yml}\" --concurrency auto",
@@ -34,7 +34,7 @@
         "lint": "eslint --cache . --concurrency auto",
         "prepare": "husky || true",
         "profiling": "cross-env NODE_ENV=production tsx --prof lib/index.ts",
-        "start": "next start",
+        "start": "cd frontend && npm run start",
         "start:rsshub": "cross-env NODE_ENV=production NODE_OPTIONS='--max-http-header-size=32768' node dist/index.mjs",
         "test": "npm run format:check && npm run vitest:coverage",
         "vitest": "cross-env NODE_ENV=test vitest",

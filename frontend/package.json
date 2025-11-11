@@ -1,0 +1,38 @@
+{
+  "name": "teaboard-rss-frontend",
+  "version": "1.0.0",
+  "description": "TeaBoard RSS - 한국어 최적화 RSS 서비스 프론트엔드",
+  "homepage": "https://github.com/reallygood83/rss",
+  "bugs": {
+    "url": "https://github.com/reallygood83/rss/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reallygood83/rss.git"
+  },
+  "license": "MIT",
+  "author": "Moon-Jung Kim",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "15.0.2",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
