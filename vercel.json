@@ -13,13 +13,16 @@
     }
   ],
   "env": {
-    "NODE_VERSION": "22"
+    "NODE_VERSION": "22",
+    "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true",
+    "PUPPETEER_SKIP_DOWNLOAD": "true"
   },
   "functions": {
     "dist/index.mjs": {
       "runtime": "nodejs22.x"
     }
   },
-  "buildCommand": "npm run build:vercel",
-  "outputDirectory": "dist"
+  "buildCommand": "npm install --ignore-scripts && npm run build:vercel",
+  "outputDirectory": "dist",
+  "installCommand": "npm install --ignore-scripts"
 }
