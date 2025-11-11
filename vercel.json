@@ -2,14 +2,25 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/index.mjs",
+      "src": "package.json",
+      "use": "@vercel/static",
+      "config": {
+        "distDir": ".next/static"
+      }
+    },
+    {
+      "src": ".next/server/**/*.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/index.mjs"
+      "dest": "/$1"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
     }
   ],
   "env": {
@@ -17,7 +28,7 @@
     "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true",
     "PUPPETEER_SKIP_DOWNLOAD": "true"
   },
-  "buildCommand": "npm install --ignore-scripts && npm run build:vercel",
-  "outputDirectory": "dist",
+  "buildCommand": "npm install --ignore-scripts && npm run build",
+  "outputDirectory": ".next",
   "installCommand": "npm install --ignore-scripts"
 }
