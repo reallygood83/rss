@@ -5,7 +5,7 @@ nixPkgs = ["nodejs_22", "pnpm"]
 cmds = ["pnpm install --force"]
 
 [phases.build]
-cmds = ["pnpm run build:rsshub"]
+cmds = ["pnpm run build:vercel"]
 
 [start]
 cmd = "pnpm run start:rsshub"
