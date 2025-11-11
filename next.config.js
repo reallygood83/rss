@@ -6,6 +6,8 @@ const nextConfig = {
     serverComponentsExternalPackages: [],
   },
   trailingSlash: false,
+  output: 'export',
+  distDir: 'out',
 };
 
 export default nextConfig;
