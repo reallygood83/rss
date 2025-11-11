@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/index.mjs",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/index.mjs"
+    }
+  ],
+  "env": {
+    "NODE_VERSION": "22"
+  },
+  "functions": {
+    "dist/index.mjs": {
+      "runtime": "nodejs22.x"
+    }
+  },
+  "buildCommand": "npm run build:vercel",
+  "outputDirectory": "dist"
+}
