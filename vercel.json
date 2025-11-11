@@ -1,34 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static",
-      "config": {
-        "distDir": ".next/static"
-      }
-    },
-    {
-      "src": ".next/server/**/*.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    }
-  ],
-  "env": {
-    "NODE_VERSION": "22",
-    "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true",
-    "PUPPETEER_SKIP_DOWNLOAD": "true"
-  },
-  "buildCommand": "npm install --ignore-scripts && npm run build",
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
   "outputDirectory": ".next",
-  "installCommand": "npm install --ignore-scripts"
+  "installCommand": "npm install",
+  "env": {
+    "NODE_VERSION": "22"
+  }
 }
