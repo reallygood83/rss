@@ -1,0 +1,21 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#FFD100"/>
+
+  <!-- Black border (Neo-Brutalism style) -->
+  <rect x="0" y="0" width="32" height="32" fill="none" stroke="#000000" stroke-width="2"/>
+
+  <!-- Tea cup icon -->
+  <g transform="translate(8, 10)">
+    <!-- Cup body -->
+    <path d="M2 2 L2 8 Q2 10 4 10 L12 10 Q14 10 14 8 L14 2 Z" fill="#000000" stroke="#000000" stroke-width="1.5"/>
+
+    <!-- Handle -->
+    <path d="M14 4 Q16 4 16 6 Q16 8 14 8" fill="none" stroke="#000000" stroke-width="1.5"/>
+
+    <!-- Steam lines (RSS waves) -->
+    <path d="M5 0 Q5 -1 6 -1" stroke="#000000" stroke-width="1" fill="none" stroke-linecap="round"/>
+    <path d="M8 0 Q8 -2 9 -2" stroke="#000000" stroke-width="1" fill="none" stroke-linecap="round"/>
+    <path d="M11 0 Q11 -1 12 -1" stroke="#000000" stroke-width="1" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

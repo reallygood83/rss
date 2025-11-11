@@ -1,0 +1,57 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- Yellow accent box (rotated) -->
+  <g transform="translate(600, 200) rotate(-2)">
+    <rect x="-250" y="-80" width="500" height="160" fill="#FFD100" stroke="#000000" stroke-width="8"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="600" y="220" font-family="Arial, sans-serif" font-size="72" font-weight="900" fill="#000000" text-anchor="middle">
+    🍵 TeaBoard RSS
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#000000" text-anchor="middle">
+    한국어 최적화 RSS 서비스
+  </text>
+
+  <!-- Description -->
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#333333" text-anchor="middle">
+    RSS를 지원하지 않는 웹사이트도 클릭 몇 번으로 RSS 피드로 만들기
+  </text>
+
+  <!-- Feature boxes -->
+  <g transform="translate(200, 420)">
+    <!-- Box 1 -->
+    <rect x="0" y="0" width="240" height="120" fill="#FFD100" stroke="#000000" stroke-width="6"/>
+    <text x="120" y="45" font-family="Arial, sans-serif" font-size="36" font-weight="900" fill="#000000" text-anchor="middle">
+      🎯
+    </text>
+    <text x="120" y="80" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#000000" text-anchor="middle">
+      쉬운 생성
+    </text>
+
+    <!-- Box 2 -->
+    <rect x="280" y="0" width="240" height="120" fill="#FFFFFF" stroke="#000000" stroke-width="6"/>
+    <text x="400" y="45" font-family="Arial, sans-serif" font-size="36" font-weight="900" fill="#000000" text-anchor="middle">
+      ⚡
+    </text>
+    <text x="400" y="80" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#000000" text-anchor="middle">
+      빠른 업데이트
+    </text>
+
+    <!-- Box 3 -->
+    <rect x="560" y="0" width="240" height="120" fill="#000000" stroke="#000000" stroke-width="6"/>
+    <text x="680" y="45" font-family="Arial, sans-serif" font-size="36" font-weight="900" fill="#FFFFFF" text-anchor="middle">
+      🇰🇷
+    </text>
+    <text x="680" y="80" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+      한국어 최적화
+    </text>
+  </g>
+
+  <!-- Bottom decoration - shadow effect -->
+  <rect x="200" y="544" width="800" height="6" fill="#000000" opacity="0.2"/>
+</svg>
