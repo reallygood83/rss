@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-pretendard: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+* {
+  font-family: var(--font-pretendard) !important;
+}
+
+body {
+  font-family: var(--font-pretendard);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 네오 브루탈리즘 유틸리티 클래스 */
+@layer utilities {
+  .brutal-shadow {
+    box-shadow: 4px 4px 0px #000;
+  }
+
+  .brutal-shadow-lg {
+    box-shadow: 8px 8px 0px #000;
+  }
+
+  .brutal-shadow-xl {
+    box-shadow: 12px 12px 0px #000;
+  }
+
+  .brutal-shadow-hover:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #000;
+  }
+
+  .brutal-shadow-active:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000;
+  }
+
+  .brutal-border {
+    border: 4px solid #000;
+  }
+
+  .brutal-border-thick {
+    border: 6px solid #000;
+  }
+
+  .rotate-slight {
+    transform: rotate(-2deg);
+  }
+}
+
+/* Tailwind 컴포넌트 레이어 */
+@layer components {
+  .container-custom {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+}
