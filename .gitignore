@@ -37,6 +37,8 @@ dump.rdb
 error.log
 npm-debug.log
 package-lock.json
+# Frontend uses npm, so allow package-lock.json there
+!frontend/package-lock.json
 # pnpm-lock.yaml
 yarn.lock
 yarn-error.log
